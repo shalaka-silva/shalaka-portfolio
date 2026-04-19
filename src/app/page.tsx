@@ -3,11 +3,11 @@ import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/layout/Container";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
+import { Expertise } from "@/components/sections/Expertise";
+import { Projects } from "@/components/sections/Projects";
 
 /**
  * Home page — assembles all portfolio sections.
- * Each section is a `<section>` with a stable `id` for anchor navigation.
- * Replace each placeholder div with the real section component as milestones progress.
  */
 export default function HomePage() {
   return (
@@ -18,39 +18,8 @@ export default function HomePage() {
         <Hero />
         <About />
 
-        {/* ── Expertise ──────────────────────────────────────── */}
-        <section
-          id="expertise"
-          className="py-24 border-t border-[var(--border)]"
-        >
-          <Container>
-            <p className="text-xs font-mono text-[var(--muted-foreground)] uppercase tracking-widest mb-3">
-              Core Expertise
-            </p>
-            <div className="h-48 rounded-lg bg-[var(--muted)] flex items-center justify-center">
-              <span className="text-sm text-[var(--muted-foreground)]">
-                Expertise section
-              </span>
-            </div>
-          </Container>
-        </section>
-
-        {/* ── Projects ───────────────────────────────────────── */}
-        <section
-          id="projects"
-          className="py-24 border-t border-[var(--border)]"
-        >
-          <Container>
-            <p className="text-xs font-mono text-[var(--muted-foreground)] uppercase tracking-widest mb-3">
-              Featured Projects
-            </p>
-            <div className="h-48 rounded-lg bg-[var(--muted)] flex items-center justify-center">
-              <span className="text-sm text-[var(--muted-foreground)]">
-                Projects section
-              </span>
-            </div>
-          </Container>
-        </section>
+        <Expertise />
+        <Projects />
 
         {/* ── Experience ─────────────────────────────────────── */}
         <section
