@@ -6,6 +6,7 @@ import { Expertise } from "@/components/sections/Expertise";
 import { Projects } from "@/components/sections/Projects";
 import { Experience } from "@/components/sections/Experience";
 import { TechStack } from "@/components/sections/TechStack";
+import { Contact } from "@/components/sections/Contact";
 
 /**
  * Home page — assembles all portfolio sections.
@@ -25,19 +26,7 @@ export default function HomePage() {
         <Experience />
         <TechStack />
 
-        {/* ── Contact — placeholder, replaced in Milestone 5 ── */}
-        <section
-          id="contact"
-          className="py-24 border-t border-[var(--border)]"
-        >
-          <div className="mx-auto w-full max-w-6xl px-5 sm:px-8 lg:px-10">
-            <div className="h-48 rounded-lg bg-[var(--muted)] flex items-center justify-center">
-              <span className="text-sm text-[var(--muted-foreground)]">
-                Contact / CTA
-              </span>
-            </div>
-          </div>
-        </section>
+        <Contact />
       </main>
 
       <Footer />

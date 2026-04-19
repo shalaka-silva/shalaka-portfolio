@@ -40,6 +40,13 @@ export const EXPERTISE: ExpertiseItem[] = [
     tags: ["PostgreSQL", "MySQL", "PostGIS", "Query Optimisation", "Indexing"],
   },
   {
+    icon: "Workflow",
+    title: "Mobile API & Rapid Delivery",
+    description:
+      "Led a backend team that shipped ~15 production app backends in a single year — each fully Swagger-documented and API-ready for iOS, Android, admin panels, and web. Proven at pace without cutting quality.",
+    tags: ["Laravel", "REST API", "Swagger / OpenAPI", "Mobile Backends", "Team Lead"],
+  },
+  {
     icon: "Layers",
     title: "Legacy Modernisation",
     description:
@@ -51,6 +58,6 @@ export const EXPERTISE: ExpertiseItem[] = [
     title: "Infrastructure & DevOps",
     description:
       "Containerising applications, defining deployment pipelines, and managing Linux server environments. Focused on reproducibility, environment parity, and deployment confidence.",
-    tags: ["Docker", "Linux", "Nginx", "CI/CD", "Shell Scripting"],
+    tags: ["Docker", "Ansible", "Linux", "GitLab CI", "Nginx"],
   },
 ];

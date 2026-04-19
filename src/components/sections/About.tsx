@@ -84,12 +84,20 @@ export function About() {
             className="lg:col-span-3 space-y-5"
           >
             <p className="text-base text-[var(--muted-foreground)] leading-[1.85]">
-              {/* Replace with your actual bio */}
-              I&rsquo;m a Senior Software Engineer with extensive experience
+              I&rsquo;m a Senior Software Engineer with 8+ years of experience
               designing and delivering backend systems that power real-world
-              operations. My work spans aviation software, geospatial data
-              platforms, and enterprise SaaS — areas where reliability,
-              precision, and scalability are non-negotiable.
+              operations. My work spans aviation software, geospatial platforms,
+              HRM systems, real-time applications, e-commerce, and enterprise
+              SaaS — domains where reliability, precision, and scalability are
+              non-negotiable.
+            </p>
+            <p className="text-base text-[var(--muted-foreground)] leading-[1.85]">
+              One of my most demanding environments was leading a backend team
+              that delivered approximately 15 production mobile app backends in a
+              single year — each fully Swagger-documented and API-ready for iOS,
+              Android, admin panels, and web. That pace demanded reusable
+              architecture, rigorous standards, and close cross-functional
+              coordination.
             </p>
             <p className="text-base text-[var(--muted-foreground)] leading-[1.85]">
               I&rsquo;ve led projects from legacy modernisation to greenfield
@@ -113,6 +121,12 @@ export function About() {
               AI and ML in the context of geospatial intelligence and predictive
               systems.
             </p>
+            <p className="text-base text-[var(--muted-foreground)] leading-[1.85]">
+              Currently based in Dubai and actively looking to relocate to
+              Europe, the UK, USA, Canada, or Australia. I bring the same
+              systems-thinking approach whether the problem is a real-time taxi
+              dispatch API, a payroll engine, or an aeronautical chart viewer.
+            </p>
 
             {/* Quick facts */}
             <div className="flex flex-wrap gap-2 pt-4">
@@ -126,7 +140,7 @@ export function About() {
               />
               <Fact
                 icon={<Coffee className="size-3.5" />}
-                label="Open to remote roles"
+                label="Relocating to EU / UK / USA / CA / AU"
               />
             </div>
           </motion.div>
@@ -148,8 +162,8 @@ export function About() {
               )}
             >
               <Stat value="8+" label="Years experience" />
-              <Stat value="30+" label="Projects shipped" />
-              <Stat value="5+" label="Industries served" />
+              <Stat value="40+" label="Projects shipped" />
+              <Stat value="6+" label="Industries served" />
               <Stat value="15+" label="Technologies" />
             </div>
 
@@ -160,10 +174,12 @@ export function About() {
               </p>
               {[
                 "Backend architecture & REST APIs",
-                "Geospatial & mapping systems",
                 "Aviation & flight planning software",
+                "Geospatial & mapping systems",
+                "Mobile app backends (Swagger-ready)",
+                "HRM & payroll systems",
+                "Real-time & e-commerce platforms",
                 "Legacy modernisation",
-                "Scalable SaaS platforms",
                 "Applied AI / ML exploration",
               ].map((area) => (
                 <div

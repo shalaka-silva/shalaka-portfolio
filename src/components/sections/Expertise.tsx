@@ -8,6 +8,7 @@ import {
   Database,
   Layers,
   Cloud,
+  Workflow,
   type LucideProps,
 } from "lucide-react";
 import { Container } from "@/components/layout/Container";
@@ -24,6 +25,7 @@ const ICON_MAP: Record<string, React.ComponentType<LucideProps>> = {
   Database,
   Layers,
   Cloud,
+  Workflow,
 };
 
 /* ─── Animation ─── */
