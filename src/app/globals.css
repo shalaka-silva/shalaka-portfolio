@@ -1,26 +1,85 @@
 @import "tailwindcss";
 
+/* ─── Dark mode: applies when .dark class is on <html> (next-themes default) ─── */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ─── Design tokens ─── */
+@theme {
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+
+  /* Spacing scale extensions */
+  --spacing-18: 4.5rem;
+  --spacing-22: 5.5rem;
+
+  /* Custom semantic colors — overridden per theme below */
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+}
+
+/* ─── Light theme tokens ─── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f9f9f8;
+  --foreground: #111111;
+  --surface: #ffffff;
+  --border: #e4e4e4;
+  --muted: #f3f3f2;
+  --muted-foreground: #737373;
+  --accent: #111111;
+  --accent-foreground: #ffffff;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ─── Dark theme tokens ─── */
+.dark {
+  --background: #0c0c0c;
+  --foreground: #f0f0ee;
+  --surface: #161616;
+  --border: #262626;
+  --muted: #1c1c1c;
+  --muted-foreground: #888888;
+  --accent: #f0f0ee;
+  --accent-foreground: #111111;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ─── Base styles ─── */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+/* ─── Selection color ─── */
+::selection {
+  background-color: var(--foreground);
+  color: var(--background);
+}
+
+/* ─── Focus ring ─── */
+:focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ─── Scrollbar (webkit) ─── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--border);
+  border-radius: 3px;
 }
