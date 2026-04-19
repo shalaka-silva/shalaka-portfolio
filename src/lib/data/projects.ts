@@ -24,7 +24,7 @@ export const PROJECTS: Project[] = [
     tags: ["PHP", "Laravel", "PostgreSQL", "PostGIS", "REST API", "Aviation Data"],
     featured: true,
     links: {
-      github: "https://github.com/shalakasilva",
+      github: "https://github.com/shalaka-silva",
     },
   },
   {
@@ -36,7 +36,7 @@ export const PROJECTS: Project[] = [
     tags: ["OpenLayers", "GeoServer", "Laravel", "PostGIS", "WebSockets"],
     featured: false,
     links: {
-      github: "https://github.com/shalakasilva",
+      github: "https://github.com/shalaka-silva",
     },
   },
   {
@@ -48,7 +48,7 @@ export const PROJECTS: Project[] = [
     tags: ["Laravel", "MySQL", "Multi-tenant", "PDF", "OAuth2", "ARINC 424", "Barons API", "FlightAware API", "RAIM Integration"],
     featured: false,
     links: {
-      github: "https://github.com/shalakasilva",
+      github: "https://github.com/shalaka-silva",
     },
   },
   {
@@ -60,7 +60,7 @@ export const PROJECTS: Project[] = [
     tags: ["OpenLayers", "GeoServer", "WMS", "JavaScript", "PHP", "Aviationweather data", "METOffice API"],
     featured: false,
     links: {
-      github: "https://github.com/shalakasilva",
+      github: "https://github.com/shalaka-silva",
     },
   },
 ];

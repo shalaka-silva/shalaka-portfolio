@@ -230,7 +230,7 @@ export function Projects() {
           className="mt-12 flex justify-center"
         >
           <a
-            href="https://github.com/shalakasilva"
+            href="https://github.com/shalaka-silva"
             target="_blank"
             rel="noopener noreferrer"
             className={cn(

@@ -11,7 +11,7 @@ const FOOTER_LINKS = [
 const SOCIAL_LINKS = [
   {
     label: "GitHub",
-    href: "https://github.com/shalakasilva", // replace with actual GitHub handle
+    href: "https://github.com/shalaka-silva",
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -24,7 +24,7 @@ const SOCIAL_LINKS = [
   },
   {
     label: "LinkedIn",
-    href: "https://linkedin.com/in/shalaka-deshan", // replace with actual LinkedIn handle
+    href: "https://www.linkedin.com/in/shalaka-deshan/",
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -38,7 +38,7 @@ const SOCIAL_LINKS = [
 ] as const;
 
 /**
- * Site footer — minimal, typographic, with social links and copyright.
+ * Site footer.
  */
 export function Footer() {
   const year = new Date().getFullYear();

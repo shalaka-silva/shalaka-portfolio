@@ -118,11 +118,11 @@ export function About() {
             <div className="flex flex-wrap gap-2 pt-4">
               <Fact
                 icon={<MapPin className="size-3.5" />}
-                label="Based in Sri Lanka" /* replace with actual location */
+                label="Based in Dubai, UAE"
               />
               <Fact
                 icon={<Calendar className="size-3.5" />}
-                label="8+ years experience" /* replace with actual years */
+                label="8+ years experience"
               />
               <Fact
                 icon={<Coffee className="size-3.5" />}
